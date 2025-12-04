@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional E-Portfolio - Software Developer & Cloud Enthusiast">
+    <meta name="author" content="Your Name">
+    <meta name="keywords" content="portfolio, software developer, web development, cloud technology">
+    <title>Your Name - Portfolio</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#activities" class="nav-link" data-section="activities">Activities</a>
+                <a href="#goals" class="nav-link" data-section="goals">Goals</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/Home Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="parallax-layer" data-speed="0.2">
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            <div class="hero-bg-shape shape-3"></div>
+        </div>
+        
+        <div class="hero-content parallax-layer" data-speed="0.5">
+            <div class="hero-text">
+                <h1 class="hero-title fade-in-up">
+                    Hello, I'm <span class="highlight-text">ZHOU Anqi</span>
+                </h1>
+                <div class="typing-container">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description fade-in-up" style="animation-delay: 0.6s">
+                    AWS Student Ambassador passionate about cloud technologies, modern infrastructure, and solving real-world technical challenges. 
+                    Welcome to my digital portfolio where expertise meets innovation.
+                </p>
+                <div class="hero-buttons fade-in-up" style="animation-delay: 0.8s">
+                    <a href="#projects" class="btn-primary magnetic-btn">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn-secondary magnetic-btn">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title reveal-text">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-image reveal-left">
+                    <div class="image-container">
+                        <img src="icon.jpg" alt="ZHOU Anqi Profile Photo" class="profile-image" loading="eager">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text reveal-right">
+                    <div class="about-intro">
+                        <p>
+                            My name is ZHOU Anqi, and I am currently studying Cloud and Data Centre Administration at HKIIT. 
+                            I am also an AWS Student Ambassador, which allows me to stay closely connected to the cloud community. 
+                            I actively participate in major industry events such as AWS Summit and Google DevFest.
+                        </p>
+                        <p>
+                            I am passionate about cloud technologies, modern infrastructure, and solving real-world technical challenges. 
+                            Through my studies and experiences, I have built a solid foundation in cloud computing, networking, 
+                            and data centre operations—skills that I look forward to further developing in my future career.
+                        </p>
+                    </div>
+                    
+                    <div class="education-section">
+                        <h3 class="subsection-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Education
+                        </h3>
+                        <div class="education-item">
+                            <h4>Cloud and Data Centre Administration</h4>
+                            <p class="institution">Hong Kong Institute of Information Technology (HKIIT)</p>
+                            <p class="duration">Current Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <!-- Cloud Technology Skills -->
+                <div class="skill-category reveal-up" data-delay="0">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Technology</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Amazon Web Services</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Google Cloud Platform</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker & Kubernetes</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Development Skills -->
+                <div class="skill-category reveal-up" data-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI & Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Cloud Architecture & Design</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Technical Presentation</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Infrastructure Automation</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools Skills -->
+                <div class="skill-category reveal-up" data-delay="400">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB & SQL</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & DevOps</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">UI/UX Design</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Featured Projects</h2>
+            
+            <div class="project-showcase">
+                <div class="project-info reveal-left">
+                    <div class="project-header">
+                        <h3 class="project-title">Mental Health Chatbot</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Healthcare</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        An AI chatbot project focused on mental health support. Combining natural language processing 
+                        technology to provide real-time emotional support and mental health resources, helping users 
+                        receive appropriate psychological counseling advice when needed.
+                    </p>
+                    
+                    <div class="project-highlights">
+                        <h4>Key Features:</h4>
+                        <ul class="highlights-list">
+                            <li><i class="fas fa-check"></i> Natural Language Processing for emotional understanding</li>
+                            <li><i class="fas fa-check"></i> Real-time mental health support</li>
+                            <li><i class="fas fa-check"></i> Personalized counseling advice</li>
+                            <li><i class="fas fa-check"></i> Mental health resource integration</li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="project-gallery reveal-right">
+                    <div class="gallery-container">
+                        <div class="main-image">
+                            <img src="project1.png" 
+                                 alt="Mental Health Chatbot Main Interface" 
+                                 class="gallery-main" 
+                                 id="galleryMain"
+                                 loading="eager">
+                        </div>
+                        
+                        <div class="thumbnail-grid">
+                            <img src="project1.png" 
+                                 alt="Chatbot Interface" 
+                                 class="gallery-thumb active"
+                                 data-src="project1.png">
+                            <img src="project2.png" 
+                                 alt="Mental Health Resources" 
+                                 class="gallery-thumb"
+                                 data-src="project2.png">
+                            <img src="project3.png" 
+                                 alt="AI Response System" 
+                                 class="gallery-thumb"
+                                 data-src="project3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities & Achievements Section -->
+    <section id="activities" class="activities section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Activities & Achievements</h2>
+            
+            <div class="activities-content">
+                <div class="activities-intro reveal-up">
+                    <p class="activities-description">
+                        As an AWS Student Ambassador, I actively participate in technology events including GDG meetups, 
+                        AWS Summit conferences, and have received recognition for my contributions to the cloud community.
+                    </p>
+                </div>
+                
+                <div class="activities-gallery">
+                    <div class="activity-card reveal-up" data-delay="0">
+                        <div class="activity-image">
+                            <img src="activity1.jpg" alt="GDG Event Participation" loading="lazy">
+                            <div class="activity-overlay">
+                                <div class="activity-info">
+                                    <h4>GDG Event</h4>
+                                    <p>Developer Community</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card reveal-up" data-delay="100">
+                        <div class="activity-image">
+                            <img src="activity2.jpg" alt="Award Ceremony" loading="lazy">
+                            <div class="activity-overlay">
+                                <div class="activity-info">
+                                    <h4>Award Recognition</h4>
+                                    <p>Achievement Ceremony</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card reveal-up" data-delay="200">
+                        <div class="activity-image">
+                            <img src="activity3.jpg" alt="AWS Summit Event" loading="lazy">
+                            <div class="activity-overlay">
+                                <div class="activity-info">
+                                    <h4>AWS Summit</h4>
+                                    <p>Cloud Conference</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card reveal-up" data-delay="300">
+                        <div class="activity-image">
+                            <img src="activity4.jpg" alt="AWS Summit Event" loading="lazy">
+                            <div class="activity-overlay">
+                                <div class="activity-info">
+                                    <h4>AWS Summit</h4>
+                                    <p>Cloud Conference</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Goals Section -->
+    <section id="goals" class="goals section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Career Goals</h2>
+            
+            <div class="goals-grid">
+                <!-- Short-term Goals -->
+                <div class="goal-card reveal-up" data-delay="0">
+                    <div class="card-header">
+                        <div class="goal-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Short-term Goals</h3>
+                        <span class="timeline">Next 1-2 Years</span>
+                    </div>
+                    <div class="goal-content">
+                        <ul class="goals-list">
+                            <li>Complete AWS Solutions Architect – Professional certification</li>
+                            <li>Pursue Google Cloud certifications for multi-cloud expertise</li>
+                            <li>Find entry-level cloud engineering or DevOps internship</li>
+                            <li>Strengthen automation tools and containerization skills</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Long-term Goals -->
+                <div class="goal-card reveal-up" data-delay="200">
+                    <div class="card-header">
+                        <div class="goal-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>Long-term Goals</h3>
+                        <span class="timeline">Next 3-5 Years</span>
+                    </div>
+                    <div class="goal-content">
+                        <ul class="goals-list">
+                            <li>Become a specialized Cloud Engineer</li>
+                            <li>Build expertise in cloud infrastructure and automation</li>
+                            <li>Support digital transformation initiatives</li>
+                            <li>Stay updated on cloud technology trends through industry events</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Professional Vision -->
+                <div class="goal-card vision-card reveal-up" data-delay="400">
+                    <div class="card-header">
+                        <div class="goal-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Professional Vision</h3>
+                        <span class="timeline">Long-term Aspiration</span>
+                    </div>
+                    <div class="goal-content">
+                        <p>
+                            My career goal is to become a Cloud Engineer, specializing in cloud infrastructure, 
+                            automation, and secure, scalable system design. I aim to contribute to organizations 
+                            by building efficient cloud environments and supporting digital transformation initiatives.
+                        </p>
+                        <p>
+                            I envision myself as a cloud technology expert who bridges the gap between technical 
+                            innovation and practical business solutions, while continuing to engage with the cloud 
+                            community through events like AWS Summit and Google DevFest.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <div class="contact-header">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            I'm always open to discussing new opportunities, collaborations, 
+                            or just having a chat about technology and innovation.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:zhouanqi@example.com">zhouanqi@example.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/zhou-anqi" target="_blank">Connect with me</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <span>Hong Kong, China</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form reveal-right">
+                    <form class="form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary magnetic-btn form-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 ZHOU Anqi. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
